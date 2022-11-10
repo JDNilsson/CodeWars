@@ -34,4 +34,10 @@ public class PigLatin {
               .deleteCharAt(0)
               .toString();
   }
+
+  public static void main(String[] args) {
+    
+    System.out.println(PigLatin.pigIt("Tjena gamers nu jävlar smäller det!"));
+
+  }
 }
