@@ -1,10 +1,14 @@
 package katas.kyu6;
+import java.util.Arrays;
 
 public class DRoot {
   public static int digital_root(int n) {
-    //String[] intStr = Integer.toString(n).split("");
+    int res = Arrays.asList(Integer.toString(n).split(""))
+                                   .stream()
+                                   .mapToInt(i -> Integer.parseInt(i))
+                                   .sum();
 
-    return 0;
+    return res % 10 > 0 ? DRoot.digital_root(res) : res;
 
   }
 }
