@@ -1,4 +1,4 @@
-package katas.kuy7;
+package katas.kyu7;
 
 import java.util.List;
 import java.util.Arrays;
@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class VowelCount {
 
   
-
+  // 'Y' is not concidered a vowel in this exercise!
 
 
   public static int getCount(String str) {
